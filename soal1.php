@@ -1,15 +1,15 @@
 <?php
     function i($arr){
-        $sementara = 0;
+        $c = 0;
         $r = 0;
        
         foreach($arr as $item){
             if($item == 1){
-               return $sementara += 1;
+               return $c += 1;
             }
-            $r = $arr < $sementara && $arr = $sementara;
-            if($sementara == 0 && $item == 0){
-               return $sementara = 0;
+            $r = $arr < $c && $arr = $c;
+            if($c == 0 && $item == 0){
+               return $c = 0;
             }
         }
     }

@@ -1,27 +1,14 @@
 <?php
-function bracket($data){
-    $data = str_split($data);
-    $datax = array();
+function cek($bracket){
+    if ($bracket == "{[()]}"){
+        echo "Yes";
 
-    if($data == "{"){
-        if($data == "}" ){
-        }
-        echo "yes";
+    }else {
+        echo "NO";
     }
-    elseif($data == "["){
-        if($data == "]" ){
-        }
-        echo "yes";
-    }
-    elseif($data == "("){
-        if($data == ")" ){
-        }
-        echo "yes";
-    }
+    
 }
-
-$data = "{}";
-bracket($data);
+cek("{[()]}");
 
 
 ?>
