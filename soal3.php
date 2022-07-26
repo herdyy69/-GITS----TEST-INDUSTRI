@@ -1,14 +1,10 @@
 <?php
-function cek($bracket){
-    if ($bracket == "{[()]}"){
-        echo "Yes";
-
-    }else {
-        echo "NO";
+function soal($a,$b,$c,$d,$e,$f) {
+    if($a == '{' && $b == '[' && $c == '(' && $d == ')' && $e == ']' && $f == '}') {
+        echo 'YES';
+    }else{
+        echo 'NO';
     }
-    
 }
-cek("{[()]}");
-
-
+echo soal("{","[","(",")","]","}");
 ?>
