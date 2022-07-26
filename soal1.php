@@ -1,21 +1,20 @@
 <?php
-    function i($arr,$n){
-        $c = 0;
+    function i($arr){
+        $sementara = 0;
         $r = 0;
-        for($j = 0; $j < $n; $j++){
-            if($arr[$j] == 0){
-                $c = 0;
+       
+        foreach($arr as $item){
+            if($item == 1){
+               return $sementara += 1;
             }
-            else{
-            $c++;
-            $r = max($r,$c);
+            $r = $arr < $sementara && $arr = $sementara;
+            if($sementara == 0 && $item == 0){
+               return $sementara = 0;
+            }
         }
-        }
-        echo $c;
     }
 
-    $arr = [1,1,0,1,1,1];
-    $n = 4;
-    echo i($arr, $n);
+    $arr = [1,0,0,1,0,1,1];
+    echo i($arr);
 
 ?>
